@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ingcrisman.quehacerhoy">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QueHacerHoy">
+        <activity
+            android:name=".Registro"
+            android:label="@string/registro_user"
+            android:exported="false" />
+        <activity
+            android:name=".InicioSesion"
+            android:label="@string/inicio_sesion"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/inicio_menu"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
