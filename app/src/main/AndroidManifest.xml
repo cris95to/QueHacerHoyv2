@@ -10,16 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QueHacerHoy">
         <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/inicio_menu"
+
+             />
+        <activity
             android:name=".Registro"
-            android:label="@string/registro_user"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/registro_user" />
         <activity
             android:name=".InicioSesion"
-            android:label="@string/inicio_sesion"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/inicio_sesion" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/inicio_menu"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
