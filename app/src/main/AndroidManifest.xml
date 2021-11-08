@@ -12,17 +12,17 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="@string/inicio_menu"
+            android:label="@string/menu_inicio"
 
              />
         <activity
             android:name=".Registro"
             android:exported="false"
-            android:label="@string/registro_user" />
+            android:label="@string/btn_registrar_pantalla" />
         <activity
             android:name=".InicioSesion"
             android:exported="false"
-            android:label="@string/inicio_sesion" />
+            android:label="@string/btn_iniciar_pantalla" />
         <activity
             android:name=".Splash"
             android:exported="true">

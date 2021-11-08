@@ -14,21 +14,21 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
         android:text="Ya soy miembro"
-        app:layout_constraintBottom_toTopOf="@+id/IDiniciosesion"
+        app:layout_constraintBottom_toTopOf="@+id/iniciarSesionPantalla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.939" />
 
     <Button
-        android:id="@+id/IDregistro"
-        android:layout_width="123dp"
-        android:layout_height="46dp"
+        android:id="@+id/registrarPantalla"
+        android:layout_width="146dp"
+        android:layout_height="49dp"
         android:layout_marginTop="412dp"
         android:fontFamily="sans-serif-black"
         android:includeFontPadding="false"
         android:onClick="goToRegistro"
-        android:text="@string/registro_user"
+        android:text="@string/btn_registrar_pantalla"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,13 +46,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/IDiniciosesion"
+        android:id="@+id/iniciarSesionPantalla"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:fontFamily="sans-serif-black"
         android:onClick="goToInicioSesion"
-        android:text="@string/inicio_sesion"
+        android:text="@string/btn_iniciar_pantalla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

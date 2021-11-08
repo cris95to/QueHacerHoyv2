@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Que Hacer Hoy</string>
-    <string name="inicio_sesion">Iniciar Sesion</string>
-    <string name="registro_user">Registro</string>
-    <string name="inicio_menu">Que Hacer Hoy</string>
+    <string name="btn_iniciar_pantalla">Iniciar Sesion</string>
+    <string name="btn_registrar_pantalla">Registrarse</string>
+    <string name="menu_inicio">Que Hacer Hoy</string>
+
+    <string name="btn_iniciar_sesion">Iniciar sesion</string>
+    <string name="btn_registrar">Registrar</string>
 </resources>

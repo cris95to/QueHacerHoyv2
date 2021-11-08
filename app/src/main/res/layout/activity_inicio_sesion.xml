@@ -17,7 +17,7 @@
         android:text="volver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/iniciarSesionBtn" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/correo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -47,7 +47,7 @@
         android:backgroundTint="@color/design_default_color_primary"/>
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/contraseña2"
         android:layout_width="349dp"
         android:layout_height="51dp"
         android:layout_marginTop="24dp"
@@ -58,15 +58,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/iniciarSesionBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="464dp"
+        android:layout_marginTop="460dp"
         android:background="@drawable/btn_iniciar"
-        android:text="Iniciar"
+        android:text="@string/btn_iniciar_sesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
