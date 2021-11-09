@@ -12,12 +12,12 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:onClick="goToMenu"
         android:text="volver"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iniciarSesionBtn" />
+        tools:visibility="gone" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -37,14 +37,14 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/design_default_color_primary"
         android:ems="10"
         android:hint="Email"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:backgroundTint="@color/design_default_color_primary"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/contraseña2"
@@ -64,7 +64,7 @@
         android:id="@+id/iniciarSesionBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="448dp"
         android:background="@drawable/btn_iniciar"
         android:text="@string/btn_iniciar_sesion"
         app:layout_constraintEnd_toEndOf="parent"

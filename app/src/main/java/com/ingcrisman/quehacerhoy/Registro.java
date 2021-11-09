@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -25,9 +26,27 @@ public class Registro extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
         mAuth = FirebaseAuth.getInstance();
 
+        //Activar el soporte para la ActionBar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         correo = findViewById(R.id.correo);
         contraseña = findViewById(R.id.Contraseña2);
         contraseñaConfirmacion = findViewById(R.id.confirmacionContraseña);
+    }
+
+    //Destruir la aplicacion
+    public void onBackPressed(){
+        finish();
+    }
+
+    //Averiguar que boton fue el que se presiono
+    public boolean onOptionsItemSelected(MenuItem menuItem){
+        int id = menuItem.getItemId();
+        if(id == android.R.id.home){
+            onBackPressed();
+            return true;
+        }
+        return super.onOptionsItemSelected(menuItem);
     }
 
     @Override
@@ -46,30 +65,10 @@ public class Registro extends AppCompatActivity {
             Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show();
         }
 
-        
-    }
-        private void firebaseAuthWithGoogle(String idToken) {
-            AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
-            mAuth.signInWithCredential(credential)
-                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                // Sign in success, update UI with the signed-in user's information
-                                Log.d(TAG, "signInWithCredential:success");
-                                FirebaseUser user = mAuth.getCurrentUser();
-                                updateUI(user);
-                            } else {
-                                // If sign in fails, display a message to the user.
-                                Log.w(TAG, "signInWithCredential:failure", task.getException());
-                                Snackbar.make(mBinding.mainLayout, "Authentication Failed.", Snackbar.LENGTH_SHORT).show();
-                                updateUI(null);
-                            }
 
-                            // ...
-                        }
-                    });
     }
+
+
 
     public void goToMenu(View view) {
         Intent newIntent = new Intent(this, MainActivity.class);

@@ -10,11 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QueHacerHoy">
         <activity
+            android:name=".SelecDestinoActividad"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:label="@string/menu_inicio"
-
-             />
+            android:label="@string/menu_inicio" />
         <activity
             android:name=".Registro"
             android:exported="false"
