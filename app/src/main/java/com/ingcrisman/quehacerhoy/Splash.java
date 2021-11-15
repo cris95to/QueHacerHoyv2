@@ -19,7 +19,7 @@ public class Splash extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(Splash.this,MainActivity.class);
+            Intent intent = new Intent(Splash.this,InicioSesion2.class);
             startActivity(intent);
             finish();
         },3000);

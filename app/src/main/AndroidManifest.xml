@@ -10,20 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QueHacerHoy">
         <activity
-            android:name=".SelecDestinoActividad"
+            android:name=".Registro2"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/menu_inicio" />
+            android:name=".InicioSesion2"
+            android:exported="false" />
         <activity
-            android:name=".Registro"
-            android:exported="false"
-            android:label="@string/btn_registrar_pantalla" />
-        <activity
-            android:name=".InicioSesion"
-            android:exported="false"
-            android:label="@string/btn_iniciar_pantalla" />
+            android:name=".SelecDestinoActividad"
+            android:exported="false" />
+
         <activity
             android:name=".Splash"
             android:exported="true">
