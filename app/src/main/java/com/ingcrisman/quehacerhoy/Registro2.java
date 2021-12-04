@@ -19,6 +19,10 @@ public class Registro2 extends AppCompatActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro2);
+
+        //Ocultar Action Bar
+        getSupportActionBar().hide();
+
         us=(EditText)findViewById(R.id.RegUser);
         pas=(EditText)findViewById(R.id.RegPass);
         nom=(EditText)findViewById(R.id.RegNombre);
@@ -42,7 +46,8 @@ public class Registro2 extends AppCompatActivity implements View.OnClickListener
                 u.setPassword(pas.getText().toString());
                 u.setNombre(nom.getText().toString());
                 u.setApellidos(ap.getText().toString());
-                if(!u.isNull()){
+                if(!u.isNull() ){
+               // if(!u.equals("")&&!nom.equals("")&& !ap.equals("")&& !us.equals("")&&!pas.equals("") ){
                     Toast.makeText(this, "ERROR Campos vacios", Toast.LENGTH_LONG).show();
                 }else if(dao.insertUsuario(u)){
                     Toast.makeText(this, "Registro Exitoso!!!", Toast.LENGTH_LONG).show();

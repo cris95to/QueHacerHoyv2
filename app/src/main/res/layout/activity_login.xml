@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Inicio sesion"
+      android:textColor="@color/black"
+      android:textSize="50dp"
+      android:textStyle="bold"
+      android:gravity="center_horizontal"
+      android:layout_marginTop="40dp"
+      android:layout_marginBottom="50dp"/>
+
+  <EditText
+      android:id="@+id/usernameSingin"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:hint="Usuario"
+      android:textSize="25dp"
+      android:textColorHint="@color/black"
+      android:background="@drawable/edittextbackground"
+      android:layout_marginBottom="30dp"
+      android:inputType="textPersonName"
+      android:paddingLeft="20dp"/>
+
+  <EditText
+      android:id="@+id/passwordSingin"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:hint="Contraseña"
+      android:textSize="25dp"
+      android:textColorHint="@color/black"
+      android:background="@drawable/edittextbackground"
+      android:layout_marginBottom="30dp"
+      android:inputType="textPassword"
+      android:paddingLeft="20dp"/>
+
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:id="@+id/btnSingin"
+      android:text="Iniciar sesion"
+      android:textSize="20dp"
+      android:backgroundTint="@color/black"
+      android:layout_marginBottom="30dp"/>
+
+
+
+
+</LinearLayout>

@@ -21,9 +21,13 @@ public class SelecDestinoActividad extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selec_destino_actividad);
 
+        //Ocultar Action Bar
+        getSupportActionBar().hide();
+
         nombre=(TextView) findViewById(R.id.nombreUsuario);
         btnSalir=(Button)findViewById(R.id.btnSalir);
         btnSalir.setOnClickListener(this);
+
 
         Bundle b=getIntent().getExtras();
         id=b.getInt("Id");
@@ -36,6 +40,12 @@ public class SelecDestinoActividad extends AppCompatActivity implements View.OnC
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+
+            case R.id.btnAgregarRuta:
+                Intent i3=new Intent(SelecDestinoActividad.this,lugares.class);
+                startActivity(i3);
+                finish();
+                break;
 
             case R.id.btnSalir:
                 Intent i2=new Intent(SelecDestinoActividad.this,InicioSesion2.class);

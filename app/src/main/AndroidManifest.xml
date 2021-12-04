@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ingcrisman.quehacerhoy">
+    package="com.ingcrisman.quehacerhoy" >
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.QueHacerHoy">
+        android:theme="@style/Theme.QueHacerHoy" >
         <activity
-            android:name=".Registro2"
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".lugares"
             android:exported="false" />
         <activity
             android:name=".InicioSesion2"
             android:exported="false" />
         <activity
+            android:name=".Registro2"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".SelecDestinoActividad"
             android:exported="false" />
-
         <activity
             android:name=".Splash"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

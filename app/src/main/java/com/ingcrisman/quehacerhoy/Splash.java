@@ -14,6 +14,8 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        //Ocultar Action Bar
+        getSupportActionBar().hide();
 
         //Bloquear la rotacion de pantalla
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

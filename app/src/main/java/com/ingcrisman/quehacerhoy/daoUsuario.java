@@ -13,8 +13,9 @@ public class daoUsuario {
     Usuario u;
     ArrayList<Usuario> lista;
     SQLiteDatabase sql;
-    String bd = "BDQueHacerHoy";
-    String tabla = "create table if not exists usuario(id integer primary key autoincrement, usuario text, pass text, nombre text, ap text, email text)";
+    String bd = "herencia";
+    //String bd = "BDUsuarios";
+    String tabla = "create table if not exists usuario(id integer primary key autoincrement, usuario text, pass text, nombre text, ap text)";
 
     //crear el metodo para dao
     public daoUsuario(Context c) {
@@ -33,7 +34,6 @@ public class daoUsuario {
             cv.put("pass", u.getPassword());
             cv.put("nombre", u.getNombre());
             cv.put("ap", u.getApellidos());
-            cv.put("email", u.getEmail());
             return (sql.insert("usuario", null, cv) > 0);
         } else {
             return false;/*en caso de no poder insertar el dato en la db va a retornar false*/
@@ -66,7 +66,7 @@ public class daoUsuario {
                 u.setPassword(cr.getString(2));
                 u.setNombre(cr.getString(3));
                 u.setApellidos(cr.getString(4));
-                u.setEmail(cr.getString(5));
+                //u.setEmail(cr.getString(5));
                 lista.add(u);
             } while (cr.moveToNext());
         }

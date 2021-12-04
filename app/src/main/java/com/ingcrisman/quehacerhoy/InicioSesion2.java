@@ -19,10 +19,14 @@ public class InicioSesion2 extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion2);
+
+        //Ocultar Action Bar
+        getSupportActionBar().hide();
+
         user=(EditText)findViewById(R.id.User);
         pass=(EditText)findViewById(R.id.Pass);
         bntEntrar=(Button)findViewById(R.id.btnEntrar);
-        btnRegistrar=(Button)findViewById(R.id.btnRegistrar);
+        btnRegistrar=(Button)findViewById(R.id.btnRegRegistrar);
         bntEntrar.setOnClickListener(this);
         btnRegistrar.setOnClickListener(this);
         dao=new daoUsuario(this);
@@ -49,7 +53,7 @@ public class InicioSesion2 extends AppCompatActivity implements View.OnClickList
                 }
                 break;
 
-            case R.id.btnRegistrar:
+            case R.id.btnRegRegistrar:
                 /*Intent: sirve para invocar componentes, en android entendemos por componentes las activities*/
                 Intent i=new Intent(InicioSesion2.this,Registro2.class);
                 startActivity(i);

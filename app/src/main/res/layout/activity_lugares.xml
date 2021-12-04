@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lugares">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="145dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="342dp"
+        android:layout_height="323dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="#2A2E4FF6"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="352dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insertar nuevo sitio"
+                android:textColor="#020202"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/input_lugar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/input_ciudad"
+                android:layout_width="309dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="56dp"
+                android:ems="10"
+                android:hint="ciudad"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.551"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/input_lugar"
+                android:layout_width="309dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="lugar"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/input_tipoLugar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/input_tipoLugar"
+                android:layout_width="309dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="Tipo de lugar"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/input_direccion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/input_direccion"
+                android:layout_width="309dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:hint="direccion"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/input_ciudad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="389dp"
+        android:layout_height="166dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnagregarDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#2A9FAA"
+                android:onClick="agregarDatos"
+                android:text="Agregar"
+                android:textColor="#101010"
+                app:icon="@android:drawable/ic_menu_add"
+                app:iconTint="#070707" />
+
+            <Button
+                android:id="@+id/btnlistarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#2A9FAA"
+                android:onClick="listarDatos"
+                android:text="Listar"
+                android:textColor="#101010"
+                app:icon="@android:drawable/ic_menu_sort_by_size"
+                app:iconTint="#070707" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnbuscarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#2A9FAA"
+                android:onClick="buscarDatos"
+                android:text="Buscar"
+                android:textColor="#101010"
+                app:icon="@android:drawable/ic_menu_search"
+                app:iconTint="#070707" />
+
+            <Button
+                android:id="@+id/btneditarDatos"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#2A9FAA"
+                android:onClick="editarDatos"
+                android:text="Editar"
+                android:textColor="#101010"
+                app:icon="@android:drawable/ic_menu_preferences"
+                app:iconTint="#070707" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"><![CDATA[
+            android:gravity="center_horizontal">
+
+
+
+            ]]>
+
+            <Button
+                android:id="@+id/btnlimpiarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:backgroundTint="#2A9FAA"
+                android:onClick="limpiarDatos"
+                android:text="Limpiar"
+                android:textColor="#101010"
+                app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                app:iconTint="#070707" />
+
+            <Button
+                android:id="@+id/btneliminarDatos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#2A9FAA"
+                android:onClick="eliminarDatos"
+                android:text="Eliminar"
+                android:textColor="#101010"
+                app:icon="@android:drawable/ic_menu_delete"
+                app:iconTint="#070707" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

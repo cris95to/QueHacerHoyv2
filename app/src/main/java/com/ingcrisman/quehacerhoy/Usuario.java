@@ -50,13 +50,13 @@ public class Usuario {
         Password = password;
     }
 
-    public String getEmail() {
+    /*public String getEmail() {
         return Email;
     }
 
     public void setEmail(String email) {
         Email = email;
-    }
+    }*/
 
 
     //4 paso: generar el metodo string
@@ -69,12 +69,12 @@ public class Usuario {
                 ", Apellidos='" + Apellidos + '\'' +
                 ", Usuario='" + Usuario + '\'' +
                 ", Password='" + Password + '\'' +
-                ", Email='" + Email + '\'' +
+                //", Email='" + Email + '\'' +
                 '}';
     }
     //5 paso: crear un metodo llamado isNull que va a servir para validar los campos y determinar si estan vacios o no
     public boolean isNull(){
-        if(Nombre.equals("")&&Apellidos.equals("")&&Usuario.equals("")&&Password.equals("")&&Email.equals("")){
+        if(Nombre.equals("")&&Apellidos.equals("")&&Usuario.equals("")&&Password.equals("")){
             return false;
         }else{
             return true;
@@ -83,11 +83,11 @@ public class Usuario {
 
     //6 paso: crear otro constructor con las variables de tipo string
 
-    public Usuario(String nombre, String apellidos, String usuario, String password, String email) {
+    public Usuario(String nombre, String apellidos, String usuario, String password) {
         Nombre = nombre;
         Apellidos = apellidos;
         Usuario = usuario;
         Password = password;
-        Email = email;
+        //Email = email;
     }
 }
