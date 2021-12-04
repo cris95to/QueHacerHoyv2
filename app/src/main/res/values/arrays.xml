@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista_lugares">
+        <item>Escoge una ciudad</item>
+        <item>Tunja</item>
+        <item>Bogota</item>
+        <item>Villa de leyva</item>
+        <item>Bucaramanga</item>
+        <item>Cali</item>
+    </string-array>
+</resources>
