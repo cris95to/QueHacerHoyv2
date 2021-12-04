@@ -41,6 +41,12 @@ public class SelecDestinoActividad extends AppCompatActivity implements View.OnC
     public void onClick(View v) {
         switch (v.getId()){
 
+            case R.id.btnMiUbicacion:
+                Intent i4=new Intent(SelecDestinoActividad.this,Principal.class);
+                startActivity(i4);
+                //finish();
+                break;
+
             case R.id.btnAgregarRuta:
                 Intent i3=new Intent(SelecDestinoActividad.this,lugares.class);
                 startActivity(i3);

@@ -172,11 +172,11 @@ public class lugares extends AppCompatActivity {
     }
 
 
-    //Destruir la aplicación
+    /*//Destruir la aplicación
     public void onBackPressed() {
 
         finish();
-    }
+    }*/
     public boolean onOptionsItemSelected(MenuItem menuItem) {
         int id = menuItem.getItemId();
 

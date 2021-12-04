@@ -87,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="119dp"
                 android:backgroundTint="#2A9FAA"
+                android:onClick="onClick"
                 android:text="mi ubicacion"
                 android:textColor="#101010"
                 app:icon="@android:drawable/ic_menu_mylocation"
