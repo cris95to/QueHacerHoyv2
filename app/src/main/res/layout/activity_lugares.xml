@@ -39,11 +39,12 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:text="Insertar nuevo sitio"
                 android:textColor="#020202"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toTopOf="@+id/input_lugar"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,53 +52,55 @@
                 android:id="@+id/input_ciudad"
                 android:layout_width="309dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="56dp"
+                android:layout_marginTop="36dp"
                 android:ems="10"
                 android:hint="ciudad"
                 android:inputType="textPersonName"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.551"
+                app:layout_constraintHorizontal_bias="0.515"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/input_lugar"
                 android:layout_width="309dp"
                 android:layout_height="44dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="4dp"
                 android:ems="10"
                 android:hint="lugar"
                 android:inputType="textPersonName"
-                app:layout_constraintBottom_toTopOf="@+id/input_tipoLugar"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_ciudad"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/input_direccion"
+                android:layout_width="308dp"
+                android:layout_height="43dp"
+                android:ems="10"
+                android:hint="direccion"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_tipoLugar"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <EditText
                 android:id="@+id/input_tipoLugar"
                 android:layout_width="309dp"
                 android:layout_height="44dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
                 android:ems="10"
                 android:hint="Tipo de lugar"
                 android:inputType="textPersonName"
-                app:layout_constraintBottom_toTopOf="@+id/input_direccion"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="TouchTargetSizeCheck" />
-
-            <EditText
-                android:id="@+id/input_direccion"
-                android:layout_width="309dp"
-                android:layout_height="44dp"
-                android:layout_marginBottom="16dp"
-                android:ems="10"
-                android:hint="direccion"
-                android:inputType="textPersonName"
-                app:layout_constraintBottom_toTopOf="@+id/input_ciudad"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_lugar"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

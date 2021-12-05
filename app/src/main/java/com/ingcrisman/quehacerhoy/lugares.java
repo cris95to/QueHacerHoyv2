@@ -159,7 +159,7 @@ public class lugares extends AppCompatActivity {
                 et1.requestFocus();//esta instruccion hace que el foco vaya a et1(campo de nombre)
             }
         }else {
-            Toast.makeText(this, "Por favor, ingrese los datos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Primero vaya a buscar, luego edite y posteriormemnte presione editar", Toast.LENGTH_SHORT).show();
         }
     }
 
